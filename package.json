@@ -1,0 +1,25 @@
+{
+  "name": "cox-and-kings",
+  "description": "Wordpress Theme created by Fifteen Design",
+  "version": "1.1.1",
+  "uri": "http://www.fifteendesign.co.uk/",
+  "author": "Fifteen Design",
+  "repository": "https://bitbucket.org/fifteendesignteam/cox-and-kings/",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18",
+    "cross-env": "^5.1",
+    "import-glob-loader": "^1.1.0",
+    "jquery": "^3.2",
+    "laravel-mix": "^2.1.14",
+    "node-sass": "^4.9.3"
+  }
+}
